@@ -1,7 +1,8 @@
 import React from 'react';
-import './App.css';
+import './App.css'; // นำเข้าไฟล์ CSS สำหรับตกแต่ง
+import profileImg from './images/fr.jpg'; // นำเข้ารูปโปรไฟล์
 
-// สร้างคอมโพเนนต์สำหรับส่วนต่างๆ
+// คอมโพเนนต์ Header
 const Header = () => {
   return (
     <header>
@@ -10,51 +11,32 @@ const Header = () => {
   );
 };
 
+// คอมโพเนนต์ About Me
 const AboutMe = () => {
   return (
     <section id="about-me">
       <h2>เกี่ยวกับฉัน</h2>
+      <img src={profileImg} alt="Profile" className="profile-img" /> {/* แสดงรูปโปรไฟล์ */}
       <p>ฉันเป็นนักพัฒนาเว็บที่มีประสบการณ์ในการสร้างแอปพลิเคชันเว็บด้วย React และเทคโนโลยีที่เกี่ยวข้อง...</p>
     </section>
   );
 };
 
+// คอมโพเนนต์ Projects
 const Projects = () => {
-  const projectList = [
-    { name: 'โปรเจกต์ 1', description: 'รายละเอียดของโปรเจกต์ 1' },
-    { name: 'โปรเจกต์ 2', description: 'รายละเอียดของโปรเจกต์ 2' },
-    { name: 'โปรเจกต์ 3', description: 'รายละเอียดของโปรเจกต์ 3' },
-  ];
-
   return (
     <section id="projects">
       <h2>โปรเจกต์ของฉัน</h2>
       <ul>
-        {projectList.map((project, index) => (
-          <li key={index}>
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-          </li>
-        ))}
+        <li><a href="https://github.com/your-username/project-1" target="_blank" rel="noopener noreferrer">โปรเจกต์ 1</a></li>
+        <li><a href="https://github.com/your-username/project-2" target="_blank" rel="noopener noreferrer">โปรเจกต์ 2</a></li>
+        <li><a href="https://github.com/your-username/project-3" target="_blank" rel="noopener noreferrer">โปรเจกต์ 3</a></li>
       </ul>
     </section>
   );
 };
 
-const Skills = () => {
-  return (
-    <section id="skills">
-      <h2>ทักษะของฉัน</h2>
-      <ul>
-        <li>React</li>
-        <li>JavaScript</li>
-        <li>HTML & CSS</li>
-        <li>Node.js</li>
-      </ul>
-    </section>
-  );
-};
-
+// คอมโพเนนต์ Footer
 const Footer = () => {
   return (
     <footer>
@@ -63,13 +45,15 @@ const Footer = () => {
   );
 };
 
+// คอมโพเนนต์หลัก
 function App() {
   return (
     <div className="App">
       <Header />
-      <AboutMe />
-      <Projects />
-      <Skills />
+      <main>
+        <AboutMe />
+        <Projects />
+      </main>
       <Footer />
     </div>
   );
