@@ -1,0 +1,81 @@
+/* ทำให้ Portfolio อยู่บนสุด */
+.nav-portfolio-section {
+  width: 100%;
+  background-color: #292929; /* สีเบจเทาอ่อน */
+  padding: 40px 0; /* เพิ่ม padding ให้พอดี */
+  text-align: center;
+}
+
+.portfolio-title {
+  color: white;
+  font-size: 2.5rem; /* ขนาดฟอนต์ใหญ่ขึ้น */
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0; /* ลบ margin-top */
+  letter-spacing: 3px;
+  border-bottom: 4px solid #b8860b; /* ขีดใต้สีทอง */
+  padding-bottom: 15px;
+  text-transform: uppercase; /* ตัวพิมพ์ใหญ่ */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* เพิ่มเงา */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffbd09; /* สีส้ม */
+  padding: 20px 0; /* เพิ่ม padding ให้กว้างขึ้น */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้ดูหรูหรา */
+  border-top: 3px solid #b8860b; /* ขอบสีทองที่ด้านบน */
+  position: relative; /* ใช้ position ปกติ ไม่ fixed */
+  width: 100%;
+  z-index: 1000; /* ให้ navbar อยู่ด้านบนสุดเมื่อมีการเลื่อน */
+}
+
+/* Navbar ul items */
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar ul li {
+  margin: 0 30px; /* เพิ่มระยะห่างระหว่างเมนู */
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 25px; /* เพิ่มมุมโค้ง */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-transform: uppercase;
+}
+
+.navbar ul li a:hover {
+  background-color: #e67e22; /* สีส้มเข้มเมื่อ hover */
+  transform: scale(1.1); /* ขยายขนาดเมื่อ hover */
+}
+
+.navbar ul li a.active {
+  background-color: #d35400; /* สีส้มเข้มสำหรับเมนูที่เลือก */
+  color: white;
+}
+
+.navbar ul li a:focus {
+  outline: none;
+}
+
+/* กำจัดช่องว่าง */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333; /* พื้นหลังสีเทาเข้ม */
+}

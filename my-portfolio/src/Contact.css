@@ -1,0 +1,91 @@
+/* กรอบหลัก */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;  /* จัดเริ่มต้นให้ตำแหน่งอยู่ด้านบน */
+  text-align: center;
+  padding: 50px;
+  background-color: #333;
+  color: #fff;
+  min-height: 100vh; /* ทำให้ไม่ดันเต็มหน้าจอ */
+  width: 100%; /* ความกว้างเต็มหน้าจอ */
+  padding-top: 80px; /* เพิ่มระยะห่างจากด้านบน */
+}
+
+/* การตั้งค่าสำหรับหัวข้อ */
+.contact-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #fff; /* สีทอง */
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #fbcf1b; /* ขีดใต้สีขาว */
+  padding-bottom: 10px; /* ระยะห่างระหว่างข้อความและขีด */
+  margin-top: 0;
+}
+
+/* การจัดการปุ่ม */
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* ระยะห่างระหว่างปุ่ม */
+  margin-top: 20px; /* เพิ่มระยะห่างระหว่างหัวข้อและปุ่ม */
+}
+
+/* การตั้งค่าสำหรับปุ่ม */
+.contact-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* ทำให้ปุ่มเป็นวงกลม */
+  border: none;
+  background-color: #444;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-btn:hover {
+  background-color: #fbcf1b;
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ไอคอน */
+.contact-btn .icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fbcf1b;
+  margin-bottom: 10px;
+}
+
+.contact-btn .icon {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* ข้อความข้างล่างไอคอน */
+.contact-btn .button-text {
+  font-size: 1rem;
+  color: white;
+  text-transform: capitalize;
+}
+
+.contact-btn a {
+  text-decoration: none;
+}

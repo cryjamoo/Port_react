@@ -1,0 +1,76 @@
+/* สไตล์สำหรับทั้งหน้าหรือกรอบหลัก */
+.education-container {
+  padding: 40px;
+  background-color: #333; /* เปลี่ยนพื้นหลังให้เป็นสีเทาเข้ม */
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ให้เนื้อหาชิดกลาง */
+}
+
+/* สไตล์สำหรับหัวข้อ */
+.title h1 {
+  text-align: left; /* ให้ข้อความชิดซ้าย */
+  font-size: 36px;
+  color: #ffffff; /* สีข้อความเป็นขาว */
+  margin-bottom: 40px;
+  width: 100%; /* เพื่อให้ข้อความขยายเต็มหน้าจอ */
+  border-bottom: 3px solid #ffbd09; /* ขีดใต้ข้อความ */
+  padding-bottom: 10px;
+}
+
+/* สไตล์สำหรับกรอบยาว */
+.long-box-container {
+  display: flex;
+  flex-direction: column; /* จัดให้กรอบอยู่ในแนวตั้ง */
+  width: 100%; /* ให้กรอบยาวเต็มความกว้าง */
+}
+
+/* สไตล์กรอบยาวแต่ละอัน */
+.long-box {
+  width: 100%; /* กรอบจะยาวเต็มความกว้าง */
+  padding: 25px;
+  margin-bottom: 30px; /* เว้นระยะระหว่างกรอบ */
+  border-radius: 12px;
+  background-color: #4b4b4b; /* กำหนดสีพื้นหลังให้เป็นสีเทาเข้ม */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row; /* จัดให้โลโก้และเนื้อหาอยู่ข้างๆ กัน */
+  justify-content: flex-start; /* จัดตำแหน่งให้ชิดซ้าย */
+  align-items: center; /* ให้โลโก้และข้อความอยู่ในแนวเดียวกัน */
+  border: 2px solid #ffbd09; /* ขอบสีทอง */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* เอฟเฟ็กต์เมื่อ hover */
+.long-box:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+/* สไตล์โลโก้ */
+.logo {
+  width: 90px; /* ขนาดโลโก้ */
+  height: auto;
+  margin-right: 30px; /* เว้นระยะระหว่างโลโก้กับเนื้อหา */
+  transition: transform 0.3s ease;
+}
+
+/* เอฟเฟ็กต์โลโก้เมื่อ hover */
+.long-box:hover .logo {
+  transform: rotate(15deg);
+}
+
+/* สไตล์ข้อความภายในกรอบ */
+.info h2 {
+  font-size: 22px;
+  color: #ffbd09; /* สีทองสำหรับหัวข้อ */
+  text-align: left; /* ข้อความหัวข้อชิดซ้าย */
+  margin-bottom: 10px;
+}
+
+.info p {
+  font-size: 16px;
+  color: #b3b3b3; /* สีเทาอ่อนสำหรับข้อความ */
+  text-align: left; /* ข้อความรายละเอียดชิดซ้าย */
+}

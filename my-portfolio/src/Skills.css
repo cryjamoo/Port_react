@@ -1,0 +1,81 @@
+/* ตั้งค่าพื้นหลังของทั้งหน้าเว็บ */
+body {
+  background-color: #333; /* พื้นหลังเป็นสีเทาเข้ม */
+  color: white; /* ข้อความสีขาว */
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* ฟอนต์ที่ดูหรูหรา */
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px; /* เพิ่มระยะห่างจากขอบบน */
+}
+
+.skills-title {
+  font-size: 3.5rem; /* ขนาดฟอนต์ใหญ่ขึ้น */
+  font-weight: 700; /* ตัวหนา */
+  color: #ffffff; /* สีทอง */
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  border-bottom: 4px solid #FBCF1B; /* เส้นใต้สีทอง */
+  padding-bottom: 10px;
+}
+
+.skills-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px; /* ระยะห่างระหว่าง skill cards */
+}
+
+.skill-card {
+  margin: 0;
+  padding: 30px;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #444; /* พื้นหลังสีเทาเข้ม */
+  color: white;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* เงาเบาๆ */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* เอฟเฟกต์การยืดและเงา */
+}
+
+.skill-card:hover {
+  transform: translateY(-10px); /* การยืดเมื่อเมาส์ไปแตะ */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเมื่อเมาส์ไปแตะ */
+}
+
+.skill-profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border: 5px solid #FBCF1B; /* ขอบสีทอง */
+}
+
+.skill-profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ให้ภาพเต็มกรอบ */
+}
+
+.skill-card h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffffff; /* ใช้สีทอง */
+}
+
+.skill-card p {
+  font-size: 1rem;
+  color: #ddd; /* สีเทาอ่อนเพื่อไม่ให้ตัดกับข้อความหลัก */
+}
