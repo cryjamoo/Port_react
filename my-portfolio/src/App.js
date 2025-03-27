@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar'; // เพิ่มการนำเข้า Navbar
-
 import Home from './Home';
 import Profile from './Profile';
 import Skills from './Skills';
